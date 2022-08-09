@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="403.0" prefWidth="745.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.arcadegamenew.HelloController">
+   <top>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+            <ImageView fitHeight="121.0" fitWidth="376.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+               <image>
+                  <Image url="file:src/main/resources/com/example/arcadegamenew/title.png" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="40.0" top="30.0" />
+               </HBox.margin>
+            </ImageView>
+            <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+   </top>
+   <bottom>
+      <Button mnemonicParsing="false" onAction="#exitApp" prefHeight="44.0" prefWidth="72.0" style="-fx-background-color: #9999FFFF; -fx-background-radius: 20; -fx-font-family: &quot;Courier New&quot;; -fx-font-weight: bolder;" text="Exit" textAlignment="JUSTIFY" textFill="#000000"
+              BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="40.0" top="25.0" />
+         </BorderPane.margin>
+      </Button>
+   </bottom>
+   <center>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="188.0" prefWidth="277.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#onPongButtonClicked" prefHeight="35.0" prefWidth="98.0" style="-fx-background-radius: 10; -fx-background-color: #000000; -fx-font-weight: bold; -fx-font-family: &quot;Courier New&quot;;" text="Play Pong" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                  </Button>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" translateX="10.0" HBox.hgrow="ALWAYS">
+                     <image>
+                        <Image url="file:src/main/resources/com/example/arcadegamenew/pongImage.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="-39.0" top="15.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+            <Region prefHeight="188.0" prefWidth="157.0" />
+            <HBox prefHeight="188.0" prefWidth="382.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#onTicTacToeButtonClicked" prefHeight="38.0" prefWidth="142.0" style="-fx-background-color: black; -fx-background-radius: 10; -fx-font-weight: bold; -fx-font-family: &quot;Courier New&quot;;" text="Play TicTacToe" textFill="WHITE" />
+                  <ImageView fitHeight="148.0" fitWidth="156.0" pickOnBounds="true" preserveRatio="true" scaleX="2.0" scaleY="2.0" translateX="-30.0">
+                     <image>
+                        <Image url="@../../../../../../../../../Downloads/pixil-frame-0%20(1).png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="45.0" right="35.0" top="40.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="file:src/main/resources/com/example/arcadegamenew/tictactoeImage.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+         <BorderPane.margin>
+            <Insets top="15.0" />
+         </BorderPane.margin>
+      </HBox>
+   </center>
+</BorderPane>
